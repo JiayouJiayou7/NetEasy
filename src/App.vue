@@ -1,19 +1,15 @@
 <template>
-  <div class="index1">
-
+  <div id="App">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
   export default {
-    
+    name: 'App'
   }
 </script>
 
 <style lang="stylus" scoped>
-  .index1
-    width 100px
-    height 100px
-    background #f40
 
 </style>
