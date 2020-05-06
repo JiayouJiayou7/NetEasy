@@ -15,7 +15,7 @@ router.get('/getIndexData', (ctx, next) => {
 });
 
 // 主页导航页面数据
-let indexCateList = require('./datas/indexCateList.json')
+let indexCateList = require('./datas/cateLists.json')
 router.get('/getindexCateList', (ctx, next) => {
 	// 生成的H5应用存在跨域问题，通过CORS设置跨域配置
 	ctx.set('Access-Control-Allow-Origin', '*')
@@ -28,7 +28,7 @@ router.get('/getcateNavDatas',(ctx,next)=>{
     data:cateNavDatas
   }
 })
-let cateLists = require('./datas/cateLists.json')
+let cateLists = require('./datas/indexCateModule.json')
 router.get('/getcateLists',(ctx,next)=>{
   ctx.body = {
     code:0,

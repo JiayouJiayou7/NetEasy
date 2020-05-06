@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="index1">
 
   </div>
 </template>
@@ -10,10 +10,10 @@
   }
 </script>
 
-<style scoped>
- .index{
-   width: 100px;
-   height: 100px;
-   background: red;
- }
+<style lang="stylus" scoped>
+  .index1
+    width 100px
+    height 100px
+    background #f40
+
 </style>
