@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
 
   </div>
 </template>
@@ -11,5 +11,9 @@
 </script>
 
 <style scoped>
-
+ .index{
+   width: 100px;
+   height: 100px;
+   background: red;
+ }
 </style>
