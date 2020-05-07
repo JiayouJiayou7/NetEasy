@@ -47,7 +47,7 @@
       height 100%
       width 20%
       &.active
-        color #f40
+        color red
       .iconfont
         font-size 36px
         line-height 60px
