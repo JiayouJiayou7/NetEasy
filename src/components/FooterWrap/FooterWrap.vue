@@ -38,8 +38,14 @@
 <style lang="stylus" scoped>
   .footerContainer
     display flex
+    border-top 1px solid #d9d9d9
+    position fixed
+    left 0
+    bottom 0
     width 100%
     height 98px
+    background-color #fff
+    z-index 3
     .footerItem
       display flex
       flex-direction column
