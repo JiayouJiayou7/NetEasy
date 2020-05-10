@@ -4,7 +4,7 @@
         <i class="iconfont icon-shouye"></i>
        <span>首页</span>
       </div> 
-      <div class="footerItem" @click="toggleNav('/category')" :class="{active:$route.path == '/category'}">
+      <div class="footerItem" @click="toggleNav('/cateList')" :class="{active: $route.path === '/cateList' || $route.path === `/cateList/cateId/${$route.params.id}`}">
          <i class="iconfont icon-fenlei"></i>
        <span>分类</span>
       </div>  

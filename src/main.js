@@ -6,6 +6,11 @@ import * as API from './api'
 import router from './router/index'
 import store from './store'
 Vue.config.productionTip = false
+import Router from 'vue-router'
+const routerPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return routerPush.call(this, location).catch(error=> error)
+}
 Vue.use(waterfall)
 Vue.prototype.$API = API;
 new Vue({
