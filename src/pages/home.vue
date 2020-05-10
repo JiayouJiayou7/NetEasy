@@ -7,9 +7,9 @@
         <img src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png" class="logo">
         <div class="searchinput">
           <i class="iconfont icon-sousuo"></i>
-          <input type="text" placeholder="搜索商品, 共20868款好物">
+          <input type="text" placeholder="搜索商品, 共20868款好物" @focus="handleFocus">
         </div>
-        <button class="login">登录</button>
+        <button class="login" @click="ToPersonal">登录</button>
       </div>
       <!-- 头部导航 -->
      
@@ -159,6 +159,16 @@ import {mapState} from "vuex";
       changeNavIndex(index){
         this.navIndex = index
       },
+      ToPersonal(){
+        this.$router.push({path:'personal'})
+      },
+      handleFocus(){
+      this.$router.push({
+        path: 'search',
+        query: {from: 'msiteId'}
+      });
+      
+    }
     },
     computed: {
       ...mapState({

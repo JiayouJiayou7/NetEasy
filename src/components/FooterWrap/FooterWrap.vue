@@ -18,7 +18,7 @@
       </div>  
       <div class="footerItem" @click="toggleNav('/personal')" :class="{active:$route.path == '/personal'}">
         <i class="iconfont icon-wodejuhuasuan"></i>
-       <span>购物车</span>
+       <span>我的</span>
       </div>  
   </div>
 </template>

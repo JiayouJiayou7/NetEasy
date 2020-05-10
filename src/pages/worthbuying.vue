@@ -11,7 +11,7 @@
       </div>
       <div class="right">
         <i class="iconfont icon-sousuo"></i>
-        <i class="iconfont icon-gouwuche"></i>
+        <i class="iconfont icon-gouwuche" @click="Tocartlist"></i>
       </div>
     </div>
   <div class="swiperTab-container">
@@ -66,7 +66,9 @@ import WaterFall from '../components/WaterFall/WaterFall'
       // }
     },
     methods:{
-      
+      Tocartlist(){
+        this.$router.push({path:'cartlist'})
+      }
       
     },
     watch:{

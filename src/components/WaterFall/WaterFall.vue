@@ -63,10 +63,7 @@
             }
           }
         }, 100);
-        
-
       }
-       
     },
     async mounted(){
       let res = await this.$API.getWaterFallData()

@@ -3,7 +3,8 @@ const home = ()=> import('../pages/home.vue')
 const category = ()=> import('../pages/category.vue')
 const worthbuying = ()=> import('../pages/worthbuying.vue')
 const cartlist = ()=> import('../pages/cartlist.vue')
-const personal = ()=> import('../pages/personal.vue') 
+const personal = ()=> import('../pages/personal.vue')
+const Search = ()=> import('../pages/Search/Search')
 export default [
   {
     path:'/home',
@@ -24,6 +25,10 @@ export default [
   {
     path:'/personal',
     component:personal,
+  },
+  {
+    path:'/Search',
+    component:Search,
   },
   {
     path:'',
