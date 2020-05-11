@@ -197,7 +197,7 @@ import {mapState} from "vuex";
   }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 // 头部搜索
   .container
     width 100%
@@ -297,13 +297,13 @@ import {mapState} from "vuex";
             display inline-block
             width 100%
             height 100%
-        .swiper-pagination
-          position absolute
-          bottom 35px
-          .swiper-pagination-bullet-active
-            width 40px
-            height 5px
-            background-color red
+      .swiper-pagination
+        position absolute
+        bottom 35px
+        .swiper-pagination-bullet
+          width 40px
+          height 4px
+          background-color red
     .policy-service
       width 100%
       height 72px
