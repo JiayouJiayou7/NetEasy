@@ -23,27 +23,39 @@
       <div class="login-wrap">
         <img src="http://yanxuan.nosdn.127.net/39c5e4583753d4c3cb868a64c2c109ea.png" alt="">
       </div>
-      <div class="btn-wrap">
+      <div class="btn-wrap" @click="whichPage(1)">
         <div class="mobile-btn">
           <i class="iconfont icon-iconzhengli_shouji"></i>
           <span>手机登录</span>
         </div>
-        <div class="email-btn">
+        <div class="email-btn" @click="whichPage(2)">
           <i class="iconfont icon-youxiang"></i>
           <span>邮箱登录</span>
         </div>
       </div>
     </div>
   </div>
+  <login :isPage="isPage" v-else></login>
   </div>
 </template>
 
 <script>
+import login from '../components/login/login'
   export default {
     data(){
       return{
-        isShowLogin:false
+        isShowLogin:false,
+        isPage:1
       }
+    },
+    methods:{
+      whichPage(page){
+       this.isPage = (page ===  1 )? page : page
+       this.isShowLogin = true
+      }
+    },
+    components:{
+      login
     }
     
   }

@@ -5,6 +5,9 @@ import 'lib-flexible/flexible'
 import * as API from './api'
 import router from './router/index'
 import store from './store'
+import './VeeValidate'
+import { Field } from 'mint-ui';
+Vue.component(Field.name, Field);
 Vue.config.productionTip = false
 import Router from 'vue-router'
 const routerPush = Router.prototype.push
