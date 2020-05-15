@@ -25,7 +25,7 @@
         <div class="cart-bg"></div>
         <div class="nocart-login">
           <span>去添加点什么吧</span>
-          <router-link to="profile"><div class="login">登录</div></router-link>
+          <router-link to="personal"><div class="login">登录</div></router-link>
         </div>
       </div>
     </div>
